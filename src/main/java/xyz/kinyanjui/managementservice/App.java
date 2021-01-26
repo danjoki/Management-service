@@ -35,6 +35,11 @@ public class App {
             Map<String, Object> model = new HashMap<>();
             return render(model, GlobalVariables.DEPARTMENT_HBS);
         }));
+
+        get(GlobalVariables.ROLES_PATH, ((request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+            return render(model, GlobalVariables.ROLES_HBS);
+        }));
     }
 
     public static String render(Map<String, Object> model, String path){
