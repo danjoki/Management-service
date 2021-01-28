@@ -12,7 +12,7 @@ public class GlobalVariables {
 
     //HBS
     public static final String INDEX_HBS = "index.hbs";
-    public static final String EMPLOYEE_HBS = "staff.hbs";
-    public static final String DEPARTMENT_HBS = "departments.hbs";
-    public static final String ROLES_HBS = "roles.hbs";
+    public static final String EMPLOYEE_HBS = "employees/employees.hbs";
+    public static final String DEPARTMENT_HBS = "departments/departments.hbs";
+    public static final String ROLES_HBS = "roles/roles.hbs";
 }

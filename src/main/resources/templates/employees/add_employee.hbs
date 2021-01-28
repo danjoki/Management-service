@@ -1,0 +1,53 @@
+{{#partial "content"}}
+<div class="container">
+    <div class="well">
+        <h4>Add Employee</h4>
+        <p>This is a crucial aspect of any job/placement.</p>
+    </div>
+    <form action="/action_page.php" class="needs-validation" novalidate>
+        <div class="form-group">
+            <label for="fname">First Name:</label>
+            <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-group">
+            <label for="lname">Last Name:</label>
+            <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-group">
+            <label for="uname">Username:</label>
+            <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-group">
+          <label for="snumber">Staff Number:</label>
+          <input type="password" class="form-control" id="snumber" placeholder="Enter Staff Number" name="snumber" required>
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-group">
+            <label for="dept">Department:</label>
+            <select type="text" class="form-control" id="dept" name="dept" required>
+                <option value="Test">Select Department</option>
+            </select>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-group">
+            <label for="role">Role:</label>
+            <select type="text" class="form-control" id="role" name="role" required>
+                <option value="Test">Select Role</option>
+            </select>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>
+{{/partial}}
+
+{{> layout.hbs}}

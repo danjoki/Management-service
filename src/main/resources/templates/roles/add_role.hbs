@@ -1,0 +1,25 @@
+{{#partial "content"}}
+<div class="container">
+    <div class="well">
+        <h4>Add Role</h4>
+        <p>This is a crucial aspect of any job/placement.</p>
+    </div>
+    <form action="/action_page.php" class="needs-validation" novalidate>
+        <div class="form-group">
+            <label for="role">Role Name:</label>
+            <input type="text" class="form-control" id="role" placeholder="Enter Role Name" name="role" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <div class="form-group">
+            <label for="responsibility">Responsibility:</label>
+            <input type="text" class="form-control" id="responsibility" placeholder="Enter Responsibility" name="responsibility" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>
+{{/partial}}
+
+{{> layout.hbs}}

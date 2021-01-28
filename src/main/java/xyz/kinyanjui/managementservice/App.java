@@ -21,28 +21,32 @@ public class App {
         port(getHerokuAssignedPort());
         staticFileLocation(GlobalVariables.PUBLIC);
 
+        //Home
         get(GlobalVariables.HOME_PATH, ((request, response) -> {
             Map<String, Object> model = new HashMap<>();
             return render(model, GlobalVariables.INDEX_HBS);
         }));
 
+        //Employee Landing Page
         get(GlobalVariables.EMPLOYEE_PATH, ((request, response) -> {
             Map<String, Object> model = new HashMap<>();
             return render(model, GlobalVariables.EMPLOYEE_HBS);
         }));
 
+        //Department Landing Page
         get(GlobalVariables.DEPARTMENT_PATH, ((request, response) -> {
             Map<String, Object> model = new HashMap<>();
             return render(model, GlobalVariables.DEPARTMENT_HBS);
         }));
 
+        //Roles Landing Page
         get(GlobalVariables.ROLES_PATH, ((request, response) -> {
             Map<String, Object> model = new HashMap<>();
             return render(model, GlobalVariables.ROLES_HBS);
         }));
     }
 
-    public static String render(Map<String, Object> model, String path){
-        return new HandlebarsTemplateEngine().render(new ModelAndView(model, path));
+    public static String render(Map<String, Object> model, String hbs){
+        return new HandlebarsTemplateEngine().render(new ModelAndView(model, hbs));
     }
 }
